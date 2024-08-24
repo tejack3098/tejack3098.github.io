@@ -41,3 +41,24 @@ var testiSwiper = new Swiper('.testimonial__container', {
   mousewheel: true,
   keyboard: true,
 });
+
+
+function openModal(modalId) {
+  var modal = document.getElementById(modalId);
+  modal.style.display = "block";
+}
+
+function closeModal(modalId) {
+  var modal = document.getElementById(modalId);
+  modal.style.display = "none";
+}
+
+// Close the modal if the user clicks anywhere outside of it
+window.onclick = function(event) {
+  var modals = document.querySelectorAll('.modal');
+  modals.forEach(function(modal) {
+    if (event.target == modal) {
+      modal.style.display = "none";
+    }
+  });
+}

@@ -26,9 +26,17 @@
     <!--=============== Skin Colors ===============-->
     <link
       rel="stylesheet"
+      href="assets/css/skins/color-1.css"
+      class="alternate-style"
+      title="color-1"
+      disabled
+    />
+    <link
+      rel="stylesheet"
       href="assets/css/skins/color-2.css"
       class="alternate-style"
       title="color-2"
+      disabled
     />
 
     <title>Portfolio Website</title>
@@ -165,7 +173,7 @@
       </div>
       <h3 class="expertise__title text-lg">CLOUD INTEGRATIONS</h3>
       <p class="expertise__detail">
-        Expert in managing cloud-based applications and automating deployment pipelines, focusing on Azure and AWS environments.
+        Expert in managing cloud-based applications and automating deployment pipelines, focusing on <b>Azure</b> and <b>AWS</b> environments.
       </p>
     </div>
 
@@ -178,7 +186,7 @@
       </div>
       <h3 class="expertise__title text-lg">API DEVELOPMENT</h3>
       <p class="expertise__detail">
-        Designed and implemented RESTful APIs that facilitate seamless integration and robust application functionalities.
+        Designed and implemented <b>RESTful APIs</b> that facilitate seamless integration and robust application functionalities.
       </p>
     </div>
 
@@ -236,25 +244,58 @@
               <h3 class="resume__subtitle text-sm">
                 NORTHEASTERN UNIVERSITY
               </h3>
-              <p class="resume__date text-sm">2022 - 2024</p>
+              <p class="resume__date text-sm">Sep 2022 - Dec 2024</p>
               <p class="resume__description text-lg">
                 Master of Science in Information Systems
               </p>
               <p class="resume__description text-md">
                 CGPA: 3.86 / 4.00
               </p>
+
+              <h4 class="resume__description text-sm">
+                Relevant Coursework:
+              </h4>
+              <p class="resume__description text-sm">
+                <ul class="resume__description text-sm">
+                  <ul>
+                    <li>&bull; Application Engineering and Design</li>
+                    <li>&bull; Program Structures and Algorithms</li>
+                    <li>&bull; Web Design and User Experience</li>
+                    <li>&bull; Data Management and Database Design</li>
+                    <li>&bull; Advanced Big-Data Applications and Indexing</li>
+                    <li>&bull; Data Science Methods and Tools</li>
+                    <li>&bull; Designing Data Architecture and Business Intelligence</li>
+                  </ul>
+                </ul>
+              </p>
+
             </div>
 
             <div class="resume__item">
               <h3 class="resume__subtitle text-sm">
                 Mumbai University
               </h3>
-              <p class="resume__date text-sm">2016 - 2020</p>
+              <p class="resume__date text-sm">Aug 2016 - Oct 2020</p>
               <p class="resume__description text-lg">
                 Bachelor of Engineering in Information Technology
               </p>
               <p class="resume__description text-md">
                 CGPA: 7.92 / 10.00
+              </p>
+
+              <h4 class="resume__description text-sm">
+                Relevant Coursework:
+              </h4>
+              <p class="resume__description text-sm">
+                <ul class="resume__description text-sm">
+                  <li>&bull; Data Structures and Algorithms</li>
+                  <li>&bull; Database Mangement Systems</li>
+                  <li>&bull; Internet Programming</li>
+                  <li>&bull; Computer Networks</li>
+                  <li>&bull; Big Data Analytics</li>
+                  <li>&bull; Operating Systems</li>
+                  <li>&bull; Artificial Intelligence</li>
+                </ul>
               </p>
             </div>
 
@@ -262,32 +303,73 @@
 
           <div class="resume__data">
             <h3 class="resume__title text-sm">EMPLOYMENT</h3>
-
+            
             <div class="resume__item">
-              <h3 class="resume__subtitle text-sm">Software Engineer Co-op</h3>
-              <p class="resume__date text-sm">May 2023 - December 2023</p>
-              <p class="resume__description text-lg">
-                Senior Full Stack Developer
+              <h3 class="resume__subtitle text-sm">Bracebridge Capital</h3>
+              <p class="resume__description text-sm">Boston, MA</p>
+              <p class="resume__date text-sm">May 2023 - Dec 2023</p>
+              <h4 class="resume__description text-md">Software Engineer Co-op</h4> 
+              <p class="resume__description text-sm">
+                Collaborated with application development team on migration of legacy system 
+                to modern .NET and C# platforms, enhanced ETL functionalities, and significantly 
+                improved debugging and data integrity using C#, .NET, Blazor, SQL Server, and Azure.
               </p>
+              <button class="button button--small button--right text-xs" style="float:right;" onclick="openModal('modal1')">Read More</button>
+
+                <!-- Modal Structure -->
+                <div id="modal1" class="modal" style="display:none;">
+                  <div class="modal-content">
+                    <span class="close" onclick="closeModal('modal1')">&times;</span>
+                    <p>More detailed information about the job role and achievements...</p>
+                  </div>
+                </div>
             </div>
 
             <div class="resume__item">
-              <h3 class="resume__subtitle text-sm">Software Engineer</h3>
-              <p class="resume__date text-sm">October 2020 - August 2022</p>
-              <p class="resume__description text-lg">
-                Awesome developer, lorem ipsum dolor sit amet, conse ctetur
-                adipisicing elit, sed do eius- mod tempor incididunt ut labore
-                et dolore magna aliqua. Ut enim ad minim veniam, quis
+              <h3 class="resume__subtitle text-sm">Infosys Limited</h3>
+              <p class="resume__description text-sm">Pune, India</p>
+              <p class="resume__date text-sm">Oct 2020 - Aug 2022</p>
+
+              <h4 class="resume__description text-md">Software Engineer</h4> 
+              <p class="resume__description text-sm">
+                Contributed to the on-time delivery of a Business Lending Web Application 
+                by collaborating with cross-functional teams and adhering to Agile methodologies, 
+                accelerating project completion by 20%. Enhanced UI and backend architectures using 
+                Angular, C#, .NET Core, and Azure DevOps, improving code quality and reducing manual 
+                efforts significantly.
               </p>
+
+              <button class="button button--small button--right text-xs" style="float:right;" onclick="openModal('modal2')">Read More</button>
+
+                <!-- Modal Structure -->
+                <div id="modal2" class="modal" style="display:none;">
+                  <div class="modal-content">
+                    <span class="close" onclick="closeModal('modal2')">&times;</span>
+                    <p>More detailed information about the job role and achievements modal2...</p>
+                  </div>
+                </div>
             </div>
 
             <div class="resume__item">
-              <h3 class="resume__subtitle text-sm">MOLLYS STUDIO</h3>
-              <p class="resume__date text-sm">2003 - 2006</p>
-              <p class="resume__description text-lg">
-                Programmer Lorem ipsum dolor sit amet, consecte tur adipisicing
-                elit, sed do eiusmod tempor incididunt ut
+              <h3 class="resume__subtitle text-sm">Air India Limited</h3>
+              <p class="resume__description text-sm">Mumbai, India</p>
+              <p class="resume__date text-sm">Jun 2018 - Aug 2018</p>
+
+              <h4 class="resume__description text-md">Full Stack Developer Intern</h4> 
+              <p class="resume__description text-sm">
+                Designed the 'Home page' for a suite of internal applications using the Bootstrap framework. 
+                Also worked on Role-Based Access Control (RBAC) for the internal document management system, 
+                implementing authentication and authorization in JSP to control document access by department.
               </p>
+              <button class="button button--small button--right text-xs" style="float:right;" onclick="openModal('modal3')">Read More</button>
+
+                <!-- Modal Structure -->
+                <div id="modal3" class="modal" style="display:none;">
+                  <div class="modal-content">
+                    <span class="close" onclick="closeModal('modal3')">&times;</span>
+                    <p>More detailed information about the job role and achievements...</p>
+                  </div>
+                </div>
             </div>
           </div>
         </div>
@@ -298,13 +380,25 @@
         <h2 class="section__title">Skills_</h2>
 
         <div class="skills__container grid">
+
           <div class="skills__content">
-            <h3 class="skills__title text-sm">FRONTEND</h3>
+            <h3 class="skills__title text-sm">LANGUAGES</h3>
 
             <div class="skills__list grid">
               <div class="skills__data">
                 <div class="skills__titles">
-                  <p class="skills__name text-sm">HTML</p>
+                  <p class="skills__name text-sm">C#</p>
+                  <span class="skills__number text-sm">95%</span>
+                </div>
+
+                <div class="skills__bar">
+                  <span class="skills__percentage" style="width: 95%"></span>
+                </div>
+              </div>
+
+              <div class="skills__data">
+                <div class="skills__titles">
+                  <p class="skills__name text-sm">Java</p>
                   <span class="skills__number text-sm">90%</span>
                 </div>
 
@@ -315,23 +409,74 @@
 
               <div class="skills__data">
                 <div class="skills__titles">
-                  <p class="skills__name text-sm">CSS</p>
-                  <span class="skills__number text-sm">80%</span>
+                  <p class="skills__name text-sm">Python</p>
+                  <span class="skills__number text-sm">90%</span>
                 </div>
 
                 <div class="skills__bar">
-                  <span class="skills__percentage" style="width: 80%"></span>
+                  <span class="skills__percentage" style="width: 90%"></span>
                 </div>
               </div>
 
               <div class="skills__data">
                 <div class="skills__titles">
                   <p class="skills__name text-sm">JavaScript</p>
-                  <span class="skills__number text-sm">60%</span>
+                  <span class="skills__number text-sm">85%</span>
                 </div>
 
                 <div class="skills__bar">
-                  <span class="skills__percentage" style="width: 60%"></span>
+                  <span class="skills__percentage" style="width: 85%"></span>
+                </div>
+              </div>
+
+              <div class="skills__data">
+                <div class="skills__titles">
+                  <p class="skills__name text-sm">TypeScript</p>
+                  <span class="skills__number text-sm">85%</span>
+                </div>
+
+                <div class="skills__bar">
+                  <span class="skills__percentage" style="width: 85%"></span>
+                </div>
+              </div>
+
+            </div>
+          </div>
+
+          <div class="skills__content">
+            <h3 class="skills__title text-sm">FRAMEWORKS</h3>
+
+            <div class="skills__list grid">
+              <div class="skills__data">
+                <div class="skills__titles">
+                  <p class="skills__name text-sm">.NET Core / ASP.NET MVC</p>
+                  <span class="skills__number text-sm">90%</span>
+                </div>
+
+                <div class="skills__bar">
+                  <span class="skills__percentage" style="width: 90%"></span>
+                </div>
+              </div>
+
+              <div class="skills__data">
+                <div class="skills__titles">
+                  <p class="skills__name text-sm">Spring Boot / Spring MVC</p>
+                  <span class="skills__number text-sm">85%</span>
+                </div>
+
+                <div class="skills__bar">
+                  <span class="skills__percentage" style="width: 85%"></span>
+                </div>
+              </div>
+
+              <div class="skills__data">
+                <div class="skills__titles">
+                  <p class="skills__name text-sm">Node.js</p>
+                  <span class="skills__number text-sm">85%</span>
+                </div>
+
+                <div class="skills__bar">
+                  <span class="skills__percentage" style="width: 85%"></span>
                 </div>
               </div>
 
@@ -345,16 +490,27 @@
                   <span class="skills__percentage" style="width: 85%"></span>
                 </div>
               </div>
+
+              <div class="skills__data">
+                <div class="skills__titles">
+                  <p class="skills__name text-sm">Blazor</p>
+                  <span class="skills__number text-sm">90%</span>
+                </div>
+
+                <div class="skills__bar">
+                  <span class="skills__percentage" style="width: 90%"></span>
+                </div>
+              </div>
             </div>
           </div>
 
           <div class="skills__content">
-            <h3 class="skills__title text-sm">BACKEND</h3>
+            <h3 class="skills__title text-sm">DATABASES</h3>
 
             <div class="skills__list grid">
               <div class="skills__data">
                 <div class="skills__titles">
-                  <p class="skills__name text-sm">PHP</p>
+                  <p class="skills__name text-sm">Microsoft SQL Server</p>
                   <span class="skills__number text-sm">90%</span>
                 </div>
 
@@ -365,7 +521,18 @@
 
               <div class="skills__data">
                 <div class="skills__titles">
-                  <p class="skills__name text-sm">Node Js</p>
+                  <p class="skills__name text-sm">MongoDB</p>
+                  <span class="skills__number text-sm">85%</span>
+                </div>
+
+                <div class="skills__bar">
+                  <span class="skills__percentage" style="width: 85%"></span>
+                </div>
+              </div>
+
+              <div class="skills__data">
+                <div class="skills__titles">
+                  <p class="skills__name text-sm">MySQL</p>
                   <span class="skills__number text-sm">80%</span>
                 </div>
 
@@ -376,23 +543,84 @@
 
               <div class="skills__data">
                 <div class="skills__titles">
-                  <p class="skills__name text-sm">Python</p>
-                  <span class="skills__number text-sm">60%</span>
+                  <p class="skills__name text-sm">PostgreSQL</p>
+                  <span class="skills__number text-sm">90%</span>
                 </div>
 
                 <div class="skills__bar">
-                  <span class="skills__percentage" style="width: 60%"></span>
+                  <span class="skills__percentage" style="width: 90%"></span>
                 </div>
               </div>
 
               <div class="skills__data">
                 <div class="skills__titles">
-                  <p class="skills__name text-sm">MySQL</p>
+                  <p class="skills__name text-sm">Amazon DynamoDB</p>
                   <span class="skills__number text-sm">85%</span>
                 </div>
 
                 <div class="skills__bar">
                   <span class="skills__percentage" style="width: 85%"></span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="skills__content">
+            <h3 class="skills__title text-sm">TOOLS</h3>
+
+            <div class="skills__list grid">
+              <div class="skills__data">
+                <div class="skills__titles">
+                  <p class="skills__name text-sm">Visual Studio</p>
+                  <span class="skills__number text-sm">95%</span>
+                </div>
+
+                <div class="skills__bar">
+                  <span class="skills__percentage" style="width: 95%"></span>
+                </div>
+              </div>
+
+              <div class="skills__data">
+                <div class="skills__titles">
+                  <p class="skills__name text-sm">IntelliJ IDEA</p>
+                  <span class="skills__number text-sm">90%</span>
+                </div>
+
+                <div class="skills__bar">
+                  <span class="skills__percentage" style="width: 90%"></span>
+                </div>
+              </div>
+
+              <div class="skills__data">
+                <div class="skills__titles">
+                  <p class="skills__name text-sm">Git</p>
+                  <span class="skills__number text-sm">90%</span>
+                </div>
+
+                <div class="skills__bar">
+                  <span class="skills__percentage" style="width: 90%"></span>
+                </div>
+              </div>
+
+              <div class="skills__data">
+                <div class="skills__titles">
+                  <p class="skills__name text-sm">Docker</p>
+                  <span class="skills__number text-sm">85%</span>
+                </div>
+
+                <div class="skills__bar">
+                  <span class="skills__percentage" style="width: 85%"></span>
+                </div>
+              </div>
+
+              <div class="skills__data">
+                <div class="skills__titles">
+                  <p class="skills__name text-sm">Swagger</p>
+                  <span class="skills__number text-sm">90%</span>
+                </div>
+
+                <div class="skills__bar">
+                  <span class="skills__percentage" style="width: 90%"></span>
                 </div>
               </div>
             </div>
