@@ -1026,7 +1026,7 @@ figcaption {
   }
 
   .skills__container,
-  .services__container {
+  .expertise__container {
     grid-template-columns: repeat(2, 1fr);
     column-gap: 1.875rem;
   }
@@ -1138,7 +1138,7 @@ figcaption {
   .contact__container,
   .posts__container,
   .skills__container,
-  .services__container {
+  .expertise__container {
     grid-template-columns: 1fr;
   }
 
