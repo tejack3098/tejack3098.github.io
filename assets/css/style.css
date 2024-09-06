@@ -968,6 +968,10 @@ figcaption {
   background-color: #6d56c1;
 }
 
+.color-3 {
+  background-color: rgba(0, 128, 128, 0.95);
+}
+
 .modal {
   display: none; /* Hidden by default */
   position: fixed; /* Stay in place */

@@ -1,9 +1,9 @@
 :root {
-  --primary-color: #6d56c1;
-  --primary-color-alt: #7b67c7;
+  --primary-color: rgba(0, 128, 128, 0.95);
+  --primary-color-alt: rgba(0, 128, 128, 0.95);
   --linear-gradient: linear-gradient(
     54deg,
-    rgba(74, 76, 179, 0.95) 34%,
-    hsla(0, 34%, 71%, 0.95)
+    rgba(0, 128, 128, 0.95) 34%,
+    rgba(0, 128, 128, 0.95)
   );
 }
