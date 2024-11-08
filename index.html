@@ -30,7 +30,7 @@
       href="assets/css/skins/color-1.css"
       class="alternate-style"
       title="color-1"
-      disabled
+      
     />
     <link
       rel="stylesheet"
@@ -44,6 +44,7 @@
       href="assets/css/skins/color-3.css"
       class="alternate-style"
       title="color-3"
+      disabled
     />
 
 
@@ -96,10 +97,8 @@
 
           <div class="home__data">
             <h1 class="home__name">Tejas Hemant Choudhari_</h1>
-            <p class="home__work">Software Engineer, Full Stack Software Engineer</p>
+            <p class="home__work">Software Engineer, Full Stack Software Developer</p>
             <dl class="home__list">
-              <dt>AGE:</dt>
-              <dd>26</dd>
               <dt>PHONE:</dt>
               <dd>+1 (857) 693 8034</dd>
               <dt>EMAIL:</dt>
@@ -139,9 +138,9 @@
         <h2 class="section__title">Hi_</h2>
 
         <p class="hello__details text-lg">
-          Software Engineer with 3 years of experience developing scalable applications using C#, .NET, Java, Node.js, React.js, RESTful APIs, and Azure. 
-          Skilled in building distributed systems, microservice architectures, and implementing CI/CD pipelines. Adept at delivering efficient, high-quality 
-          software solutions while adhering to best coding practices in Agile environments.
+          Software Engineer with 3+ years specializing in high-performance, scalable application using C#, Java, Python and, RESTful API development, 
+          and cloud-based architectures (Azure, AWS). Skilled in CI/CD, automated testing, and Agile practices to ensure 
+          system reliability and efficiency. Passionate about delivering impactful, data-driven solutions in collaborative environments
         </p>
         <a href="assets/img/Tejas_Choudhari_RESUME.pdf" target="_blank" download="Tejas_Choudhari_RESUME" class="button button--flex text-sm">
           <i class="ri-download-line"></i> DOWNLOAD CV</a>
@@ -237,8 +236,103 @@
       <section class="section container" id="resume">
         <h2 class="section__title">Resume_</h2>
 
-        <div class="resume__container grid">
-          <div class="resume__data">
+        <!-- //style="grid-template-columns: 70% 30%;"
+        //<div class="resume__data education" style="grid-column: 1/ span 1;"></div>
+        // <div class="resume__data education" style="grid-column: 2 / span 1;"></div> -->
+
+        <div class="resume__container grid" style="grid-template-columns: 60% 35%;">
+
+          <div class="resume__data employment" style="grid-column: 1/ span 1;">
+            <h3 class="resume__title text-sm">EMPLOYMENT</h3>
+            
+            <div class="resume__item">
+              <h3 class="resume__subtitle text-md">Bracebridge Capital</h3>
+              <p class="resume__description text-sm">Boston, MA</p>
+              <p class="resume__date text-sm">May 2023 - Dec 2023</p>
+              <h4 class="resume__description text-sm">Software Engineer Co-op</h4> 
+              <p class="resume__description text-sm">
+                Spearheaded the migration of a legacy system to a modern .NET and C# framework, implementing a microservice architecture 
+                and improving scalability and user experience. Developed key features for ETL pipelines, REST APIs, and optimized 
+                SQL Server interactions, resulting in improved performance, data consistency, and user satisfaction. 
+                Utilized Azure DevOps for CI/CD, automated testing, and performance optimization, reducing resource consumption 
+                and bug count while enhancing system stability.
+              </p>
+              <button class="category__btn text-md" style="float:right;" onclick="openModal('modal1')">Read More</button>
+
+                <!-- Modal Structure -->
+                <div id="modal1" class="modal" style="display:none;">
+                  <div class="modal-content">
+                    <span class="close" onclick="closeModal('modal1')">&times;</span>
+                    <ul class="resume__description list-disc list-inside" style="list-style-type: disc;">
+                      <li class="resume__description text-sm">Developed scalable solutions by migrating legacy systems to .NET 6 and Blazor UI, creating RESTful APIs to enhance compatibility and reusability, and reducing debugging time by 8 hours weekly</li>
+                      <li class="resume__description text-sm">Implemented CI/CD automation for deployment pipelines using Azure DevOps, enabling real-time analytics on execution status and error logs, which increased system efficiency by 40% and minimized manual interventions</li>
+                      <li class="resume__description text-sm">Built a robust Data Access Layer leveraging ADO.NET and optimized database operations through T-SQL stored procedures, improving data processing speed by 40% and enhancing data integrity across applications</li>
+                      <li class="resume__description text-sm">Executed unit and integration testing using NUnit to ensure high-quality, stable releases; reduced production issues and debugging time by establishing a consistent testing framework across all application modules</li>
+                    </ul>
+                  </div>
+                </div>
+            </div>
+
+            <div class="resume__item">
+              <h3 class="resume__subtitle text-md">Infosys Limited</h3>
+              <p class="resume__description text-sm">Pune, India</p>
+              <p class="resume__date text-sm">Oct 2020 - Aug 2022</p>
+
+              <h4 class="resume__description text-sm">Software Engineer</h4> 
+              <p class="resume__description text-sm">
+                Contributed to the design, development, and implementation of customer-facing features using C#, 
+                .NET Core, Angular, and Azure, improving functionality and user experience. Led key software components delivery, 
+                collaborated with cross-functional teams, optimized system performance, and automated CI/CD pipelines using Azure DevOps
+              </p>
+
+              <button class="category__btn text-md" style="float:right;" onclick="openModal('modal2')">Read More</button>
+
+                <!-- Modal Structure -->
+                <div id="modal2" class="modal" style="display:none;">
+                  <div class="modal-content">
+                    <span class="close" onclick="closeModal('modal2')">&times;</span>
+                    <p>
+                      <ul class="resume__description list-disc list-inside" style="list-style-type: disc;">
+                        <li class="resume__description text-sm">Developed and optimized scalable RESTful APIs using .NET Core and C#, supporting seamless data integration with external financial platforms and enhancing system reliability.</li>
+                        <li class="resume__description text-sm">Led migration projects for legacy ASP.NET applications to Angular and .NET Core components, significantly improving performance and responsiveness while aligning with modern development standards.</li>
+                        <li class="resume__description text-sm">Designed and maintained service-oriented architectures by integrating RESTful Web API services with Angular frontend, adhering to object-oriented design principles and SOLID standards for maintainability.</li>
+                        <li class="resume__description text-sm">Collaborated with Agile teams across development, testing, and deployment stages, conducting code reviews, managing production support, and resolving deployment issues, ensuring alignment with quality and high availability standards.</li>
+                        <li class="resume__description text-sm">Optimized database design and implemented T-SQL stored procedures, creating new tables, views, and triggers for efficient data handling in high-transaction environments.</li>
+                        <li class="resume__description text-sm">Spearheaded integration testing for end-to-end application flows between upstream and downstream systems, maintaining reliability through NUnit and MS Test.</li>
+                      </ul>
+                    </p>
+                  </div>
+                </div>
+            </div>
+
+            <div class="resume__item">
+              <h3 class="resume__subtitle text-sm">Air India Limited</h3>
+              <p class="resume__description text-sm">Mumbai, India</p>
+              <p class="resume__date text-sm">Jun 2018 - Aug 2018</p>
+
+              <h4 class="resume__description text-md">Full Stack Developer Intern</h4> 
+              <p class="resume__description text-sm">
+                Designed the 'Home page' for a suite of internal applications using the Bootstrap framework. 
+                Also worked on Role-Based Access Control (RBAC) for the internal document management system, 
+                implementing authentication and authorization in JSP to control document access by department.
+              </p>
+              <button class="category__btn text-md" style="float:right;" onclick="openModal('modal3')">Read More</button>
+
+                <!-- Modal Structure -->
+                <div id="modal3" class="modal" style="display:none;">
+                  <div class="modal-content">
+                    <span class="close" onclick="closeModal('modal3')">&times;</span>
+                    <p>
+                      <ul class="resume__description list-disc list-inside" style="list-style-type: disc;">
+                        <li class="resume__description text-sm">Designed the 'Home Page' for a suite of internal applications using the Bootstrap framework, enhancing the user interface and improving navigation for enhanced user engagement.</li>
+                        <li class="resume__description text-sm">Implemented Role-Based Access Control (RBAC) in the internal document management system, utilizing JSP for authentication and authorization processes to restrict document access based on departmental roles.</li>
+                    </p>
+                  </div>
+                </div>
+            </div>
+          </div>
+
+          <div class="resume__data education" style="grid-column: 2 / span 1;">
             <h3 class="resume__title text-sm">EDUCATION</h3>
 
             <div class="resume__item">
@@ -300,106 +394,6 @@
               </p>
             </div>
 
-          </div>
-
-          <div class="resume__data">
-            <h3 class="resume__title text-sm">EMPLOYMENT</h3>
-            
-            <div class="resume__item">
-              <h3 class="resume__subtitle text-sm">Bracebridge Capital</h3>
-              <p class="resume__description text-sm">Boston, MA</p>
-              <p class="resume__date text-sm">May 2023 - Dec 2023</p>
-              <h4 class="resume__description text-md">Software Engineer Co-op</h4> 
-              <p class="resume__description text-sm">
-                Led the migration of a legacy system to a modern .NET and C# framework, implementing a microservice architecture 
-                and improving scalability and user experience. Developed key features for ETL pipelines, REST APIs, and optimized 
-                SQL Server interactions, resulting in improved performance, data consistency, and user satisfaction. 
-                Utilized Azure DevOps for CI/CD, automated testing, and performance optimization, reducing resource consumption 
-                and bug count while enhancing system stability.
-              </p>
-              <button class="button button--small button--right text-xs" style="float:right;" onclick="openModal('modal1')">Read More</button>
-
-                <!-- Modal Structure -->
-                <div id="modal1" class="modal" style="display:none;">
-                  <div class="modal-content">
-                    <span class="close" onclick="closeModal('modal1')">&times;</span>
-                    <ul class="resume__description list-disc list-inside" style="list-style-type: disc;">
-                      <li class="resume__description text-sm">Led the migration of a legacy system to a modern .NET and C# framework, leveraging C# and Blazor to implement a robust microservice architecture for generating over 150 bond market reports, improving system scalability and user experience</li>
-                      <li class="resume__description text-sm">Reduced weekly debugging time by 8 hours by implementing a pipeline re-run feature and upgrading the UI for real-time analytics of pipelines, enhancing execution status visibility and minimizing manual troubleshooting efforts</li>
-                      <li class="resume__description text-sm">Developed and maintained key features for a web application managing ETL pipelines, utilizing C#, .NET Framework, REST APIs, and SQL Server in an Agile environment, resulting in a 25% reduction in resource consumption and improved application performance</li>
-                      <li class="resume__description text-sm">Collaborated in architecture discussions and technical planning with cross-functional teams to optimize SQL Server interactions through the implementation of Dapper in C# components, improving data consistency and reducing maintenance efforts</li>
-                      <li class="resume__description text-sm">Contributed to the design and implementation of scalable code solutions by optimizing performance through rigorous testing strategies with NUnit, MS Test, and BenchmarkDotNet frameworks, leading to a 30% reduction in bug count and increased code reliability</li>
-                      <li class="resume__description text-sm">Improved test coverage by 30% by developing a console-based application to automate the generation of YAML files for ETL pipelines, streamlining the development process and supporting continuous integration</li>
-                      <li class="resume__description text-sm">Utilized Azure DevOps for CI/CD, ensuring efficient builds and deployments for new features, reducing time-to-release and contributing to the overall stability of the system</li>
-                    </ul>
-                  </div>
-                </div>
-            </div>
-
-            <div class="resume__item">
-              <h3 class="resume__subtitle text-sm">Infosys Limited</h3>
-              <p class="resume__description text-sm">Pune, India</p>
-              <p class="resume__date text-sm">Oct 2020 - Aug 2022</p>
-
-              <h4 class="resume__description text-md">Software Engineer</h4> 
-              <p class="resume__description text-sm">
-                Contributed to the design, development, and implementation of customer-facing features using C#, 
-                .NET Core, Angular, and Azure, improving functionality and user experience. Led key software components delivery, 
-                collaborated with cross-functional teams, optimized system performance, and automated CI/CD pipelines using Azure DevOps
-              </p>
-
-              <button class="button button--small button--right text-xs" style="float:right;" onclick="openModal('modal2')">Read More</button>
-
-                <!-- Modal Structure -->
-                <div id="modal2" class="modal" style="display:none;">
-                  <div class="modal-content">
-                    <span class="close" onclick="closeModal('modal2')">&times;</span>
-                    <p>
-                      <ul class="resume__description list-disc list-inside" style="list-style-type: disc;">
-                        <li class="resume__description text-sm">Contributed to the design and implementation of customer-facing features for a Business Lending Web Application, utilizing C#, .NET Core, Angular, and Entity Framework, improving functionality and user experience while reducing manual validation efforts by 16%.</li>
-                        <li class="resume__description text-sm">Actively participated in product and architecture discussions, collaborating with cross-functional teams, including QA, product managers, and technical leads, to define feature scope and ensure alignment with customer needs and business goals</li>
-                        <li class="resume__description text-sm">Owned the delivery of key software components, establishing milestones, capturing requirements, and defining the scope of work for new features, ensuring on-time project completion and maintaining clear communication with stakeholders</li>
-                        <li class="resume__description text-sm">Developed scalable Web API architectures using C#, .NET Core, and JavaScript frameworks (Angular), ensuring efficient data flow and contributing to the overall user experience and performance improvements by creating 10+ services for component communication</li>
-
-                        <li class="resume__description text-sm">Led stakeholder communication and sprint planning sessions with QA engineers and senior technical leads, coordinating efforts to meet project goals and ensure timely, high-quality software releases</li>
-                        <li class="resume__description text-sm">Collaborated with product managers and engineering leadership to capture requirements and prioritize features for customer-facing applications, maintaining a strong focus on delivering highly available, reliable solutions</li>
-                        <li class="resume__description text-sm">Utilized Azure DevOps to automate CI/CD pipelines, streamline builds, and manage releases seamlessly, ensuring continuous integration and deployment while minimizing customer-impacting issues</li>
-                        <li class="resume__description text-sm">Engineered robust codebases with NUnit for comprehensive unit and integration testing, identifying and resolving 45+ bugs, and maintaining high code quality standards through regular code reviews</li>
-                        <li class="resume__description text-sm">Enhanced system performance by optimizing stored procedures and database queries, reducing response times by 24%, ensuring efficient handling of high-volume transactions in a distributed system</li>
-
-                        <li class="resume__description text-sm">Diagnosed and mitigated customer-impacting issues, working closely with QA engineers and leveraging automated testing tools to ensure the stability of highly available customer-facing features</li>
-                        <li class="resume__description text-sm">Delivered consistent improvements to distributed systems architecture using microservices principles, optimizing scalability, and maintaining high availability in production environments</li>
-                      </ul>
-                    </p>
-                  </div>
-                </div>
-            </div>
-
-            <div class="resume__item">
-              <h3 class="resume__subtitle text-sm">Air India Limited</h3>
-              <p class="resume__description text-sm">Mumbai, India</p>
-              <p class="resume__date text-sm">Jun 2018 - Aug 2018</p>
-
-              <h4 class="resume__description text-md">Full Stack Developer Intern</h4> 
-              <p class="resume__description text-sm">
-                Designed the 'Home page' for a suite of internal applications using the Bootstrap framework. 
-                Also worked on Role-Based Access Control (RBAC) for the internal document management system, 
-                implementing authentication and authorization in JSP to control document access by department.
-              </p>
-              <button class="button button--small button--right text-xs" style="float:right;" onclick="openModal('modal3')">Read More</button>
-
-                <!-- Modal Structure -->
-                <div id="modal3" class="modal" style="display:none;">
-                  <div class="modal-content">
-                    <span class="close" onclick="closeModal('modal3')">&times;</span>
-                    <p>
-                      <ul class="resume__description list-disc list-inside" style="list-style-type: disc;">
-                        <li class="resume__description text-sm">Designed the 'Home Page' for a suite of internal applications using the Bootstrap framework, enhancing the user interface and improving navigation for enhanced user engagement.</li>
-                        <li class="resume__description text-sm">Implemented Role-Based Access Control (RBAC) in the internal document management system, utilizing JSP for authentication and authorization processes to restrict document access based on departmental roles.</li>
-                    </p>
-                  </div>
-                </div>
-            </div>
           </div>
         </div>
       </section>
