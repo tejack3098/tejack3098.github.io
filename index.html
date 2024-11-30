@@ -236,13 +236,9 @@
       <section class="section container" id="resume">
         <h2 class="section__title">Resume_</h2>
 
-        <!-- //style="grid-template-columns: 70% 30%;"
-        //<div class="resume__data education" style="grid-column: 1/ span 1;"></div>
-        // <div class="resume__data education" style="grid-column: 2 / span 1;"></div> -->
+        <div class="resume__container grid">
 
-        <div class="resume__container grid" style="grid-template-columns: 60% 35%;">
-
-          <div class="resume__data employment" style="grid-column: 1/ span 1;">
+          <div class="resume__data employment">
             <h3 class="resume__title text-sm">EMPLOYMENT</h3>
             
             <div class="resume__item">
@@ -251,11 +247,7 @@
               <p class="resume__date text-sm">May 2023 - Dec 2023</p>
               <h4 class="resume__description text-sm">Software Engineer Co-op</h4> 
               <p class="resume__description text-sm">
-                Spearheaded the migration of a legacy system to a modern .NET and C# framework, implementing a microservice architecture 
-                and improving scalability and user experience. Developed key features for ETL pipelines, REST APIs, and optimized 
-                SQL Server interactions, resulting in improved performance, data consistency, and user satisfaction. 
-                Utilized Azure DevOps for CI/CD, automated testing, and performance optimization, reducing resource consumption 
-                and bug count while enhancing system stability.
+                Led the migration to a modern .NET and C# framework with microservices, enhancing scalability and user experience. Optimized ETL pipelines, REST APIs, and SQL Server, improving performance and data consistency while leveraging Azure DevOps for CI/CD and system stability.
               </p>
               <button class="category__btn text-md" style="float:right;" onclick="openModal('modal1')">Read More</button>
 
@@ -276,7 +268,7 @@
             <div class="resume__item">
               <h3 class="resume__subtitle text-md">Infosys Limited</h3>
               <p class="resume__description text-sm">Pune, India</p>
-              <p class="resume__date text-sm">Oct 2020 - Aug 2022</p>
+              <p class="resume__date text-sm">Nov 2020 - Aug 2022</p>
 
               <h4 class="resume__description text-sm">Software Engineer</h4> 
               <p class="resume__description text-sm">
@@ -299,6 +291,34 @@
                         <li class="resume__description text-sm">Collaborated with Agile teams across development, testing, and deployment stages, conducting code reviews, managing production support, and resolving deployment issues, ensuring alignment with quality and high availability standards.</li>
                         <li class="resume__description text-sm">Optimized database design and implemented T-SQL stored procedures, creating new tables, views, and triggers for efficient data handling in high-transaction environments.</li>
                         <li class="resume__description text-sm">Spearheaded integration testing for end-to-end application flows between upstream and downstream systems, maintaining reliability through NUnit and MS Test.</li>
+                      </ul>
+                    </p>
+                  </div>
+                </div>
+            </div>
+
+            <div class="resume__item">
+              <h3 class="resume__subtitle text-md">NSDL Database Management Ltd. (NDML)</h3>
+              <p class="resume__description text-sm">Mumbai, India</p>
+              <p class="resume__date text-sm">Jul 2020 - Oct 2020</p>
+
+              <h4 class="resume__description text-sm">Full Stack Software Developer Intern</h4> 
+              <p class="resume__description text-sm">
+                Developed RESTful APIs and dynamic UIs using Java, Spring Boot, JSP, and MySQL for secure digital payments. Collaborated in an Agile team to deploy scalable cloud applications with CI/CD, Docker, and JUnit testing.
+              </p>
+
+              <button class="category__btn text-md" style="float:right;" onclick="openModal('modal4')">Read More</button>
+
+                <!-- Modal Structure -->
+                <div id="modal4" class="modal" style="display:none;">
+                  <div class="modal-content">
+                    <span class="close" onclick="closeModal('modal4')">&times;</span>
+                    <p>
+                      <ul class="resume__description list-disc list-inside" style="list-style-type: disc;">
+                        <li class="resume__description text-sm">Developed RESTful APIs using Java, Spring Boot, and Hibernate for secure digital payments processing, integrating MySQL for database management.</li>
+                        <li class="resume__description text-sm">Designed and implemented dynamic, responsive user interfaces with HTML, CSS, and JSP for cross-platform usability.</li>
+                        <li class="resume__description text-sm">Collaborated in an Agile team to deploy the application on a private cloud, optimizing performance and scalability for enterprise use.</li>
+                        <li class="resume__description text-sm">Conducted unit and integration testing with JUnit and Mockito, ensuring backend reliability.</li>
                       </ul>
                     </p>
                   </div>
@@ -332,7 +352,7 @@
             </div>
           </div>
 
-          <div class="resume__data education" style="grid-column: 2 / span 1;">
+          <div class="resume__data education">
             <h3 class="resume__title text-sm">EDUCATION</h3>
 
             <div class="resume__item">
@@ -452,17 +472,6 @@
                 </div>
               </div>
 
-              <div class="skills__data">
-                <div class="skills__titles">
-                  <p class="skills__name text-sm">TypeScript</p>
-                  <span class="skills__number text-sm">85%</span>
-                </div>
-
-                <div class="skills__bar">
-                  <span class="skills__percentage" style="width: 85%"></span>
-                </div>
-              </div>
-
             </div>
           </div>
 
@@ -483,18 +492,7 @@
 
               <div class="skills__data">
                 <div class="skills__titles">
-                  <p class="skills__name text-sm">Spring Boot / Spring MVC</p>
-                  <span class="skills__number text-sm">85%</span>
-                </div>
-
-                <div class="skills__bar">
-                  <span class="skills__percentage" style="width: 85%"></span>
-                </div>
-              </div>
-
-              <div class="skills__data">
-                <div class="skills__titles">
-                  <p class="skills__name text-sm">Node.js</p>
+                  <p class="skills__name text-sm">Spring Boot </p>
                   <span class="skills__number text-sm">85%</span>
                 </div>
 
@@ -575,26 +573,16 @@
                 </div>
               </div>
 
-              <div class="skills__data">
-                <div class="skills__titles">
-                  <p class="skills__name text-sm">Amazon DynamoDB</p>
-                  <span class="skills__number text-sm">85%</span>
-                </div>
-
-                <div class="skills__bar">
-                  <span class="skills__percentage" style="width: 85%"></span>
-                </div>
-              </div>
             </div>
           </div>
 
           <div class="skills__content">
-            <h3 class="skills__title text-sm">TOOLS</h3>
+            <h3 class="skills__title text-sm">CLOUD</h3>
 
             <div class="skills__list grid">
               <div class="skills__data">
                 <div class="skills__titles">
-                  <p class="skills__name text-sm">Visual Studio</p>
+                  <p class="skills__name text-sm">Microsoft Azure</p>
                   <span class="skills__number text-sm">95%</span>
                 </div>
 
@@ -605,7 +593,7 @@
 
               <div class="skills__data">
                 <div class="skills__titles">
-                  <p class="skills__name text-sm">IntelliJ IDEA</p>
+                  <p class="skills__name text-sm">AWS</p>
                   <span class="skills__number text-sm">90%</span>
                 </div>
 
@@ -616,7 +604,7 @@
 
               <div class="skills__data">
                 <div class="skills__titles">
-                  <p class="skills__name text-sm">Git</p>
+                  <p class="skills__name text-sm">Docker (containerization)</p>
                   <span class="skills__number text-sm">90%</span>
                 </div>
 
@@ -625,27 +613,6 @@
                 </div>
               </div>
 
-              <div class="skills__data">
-                <div class="skills__titles">
-                  <p class="skills__name text-sm">Docker</p>
-                  <span class="skills__number text-sm">85%</span>
-                </div>
-
-                <div class="skills__bar">
-                  <span class="skills__percentage" style="width: 85%"></span>
-                </div>
-              </div>
-
-              <div class="skills__data">
-                <div class="skills__titles">
-                  <p class="skills__name text-sm">Swagger</p>
-                  <span class="skills__number text-sm">90%</span>
-                </div>
-
-                <div class="skills__bar">
-                  <span class="skills__percentage" style="width: 90%"></span>
-                </div>
-              </div>
             </div>
           </div>
         </div>
